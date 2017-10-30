@@ -24,7 +24,19 @@ int main()
         	printf("\nLa cadena mas larga es: %s", longest);
         	printf("La cadena tiene %d caracteres\n", cuenta(longest)-1);
         	printf("La cadena tiene %d dígitos\n", cuenta_digitos(longest));
-	
+
+	op=0;
+	while (op!=3) {
+		printf("\nMENU\n1)Cuenta\n2)Cuenta digito\n3)Salir\nIngrese una opción:");
+		scanf("%d",&op);
+		if (op==1) {
+			printf("\nLa cadena tiene %d caracteres\n", cuenta(longest)-1);
+		}else if (op==2) {
+			printf("\nLa cadena tiene %d dígitos\n", cuenta_digitos(longest));
+		}else if (op==3) {
+			printf("\nSaliste!\n\n");
+		}
+	}
     return 0;
 }
 
